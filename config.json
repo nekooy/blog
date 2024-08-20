@@ -1,11 +1,12 @@
 {
-    "title":"Nekooy",
-    "subTitle":"贰拾喵与你分享一切有趣",
-    "avatarUrl":"https://avatars.githubusercontent.com/u/149825804?v=4",
-    "startSite":"08/17/2024",
-    "urlMode":"pinyin",
-    "allHead":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'>
-<script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js">
-",
-    "GMEEK_VERSION":"last"
+  "title": "Nekooy",
+  "subTitle": "贰拾喵与你分享一切有趣",
+  "avatarUrl": "https://avatars.githubusercontent.com/u/149825804?v=4",
+  "startSite": "08/17/2024",
+  "urlMode": "pinyin",
+  "allHead": [
+    "<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>",
+    "<script src='https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js'></script>"
+  ],
+  "GMEEK_VERSION": "last"
 }

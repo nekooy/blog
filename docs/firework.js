@@ -1,171 +1,75 @@
-class Circle {
-    constructor({
-        origin,
-        speed,
-        color,
-        angle,
-        context
-    }) {
-        this.origin = origin
-        this.position = {
-            ...this.origin
+(function() {
+    // 创建canvas并添加到body
+    const canvas = document.createElement('canvas');
+    document.body.appendChild(canvas);
+    const ctx = canvas.getContext('2d');
+
+    // 设置canvas的大小
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    // 马卡龙颜色数组
+    const colors = ['#ffadc6', '#ffd1b8', '#fff4ba', '#b3e5c7', '#c4d7f4'];
+    let particlesArray = [];
+
+    // 粒子类
+    class Particle {
+        constructor(x, y) {
+            this.x = x;
+            this.y = y;
+            this.size = Math.random() * 10 + 5;
+            this.color = colors[Math.floor(Math.random() * colors.length)];
+            this.speedX = (Math.random() * 3) - 1.5;
+            this.speedY = (Math.random() * 3) - 1.5;
+            this.gravity = 0.05;
+            this.alpha = 1;
         }
-        this.color = color
-        this.speed = speed
-        this.angle = angle
-        this.context = context
-        this.renderCount = 0
-    }
 
-    draw() {
-        this.context.fillStyle = this.color
-        this.context.beginPath()
-        this.context.arc(this.position.x, this.position.y, 2, 0, Math.PI * 2)
-        this.context.fill()
-    }
+        update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            this.speedY += this.gravity;
+            this.alpha -= 0.02;
+            if (this.alpha < 0) this.alpha = 0;
+        }
 
-    move() {
-        this.position.x = (Math.sin(this.angle) * this.speed) + this.position.x
-        this.position.y = (Math.cos(this.angle) * this.speed) + this.position.y + (this.renderCount * 0.3)
-        this.renderCount++
-    }
-}
-
-class Boom {
-    constructor({
-        origin,
-        context,
-        circleCount = 10,
-        area
-    }) {
-        this.origin = origin
-        this.context = context
-        this.circleCount = circleCount
-        this.area = area
-        this.stop = false
-        this.circles = []
-    }
-
-    randomArray(range) {
-        const length = range.length
-        const randomIndex = Math.floor(length * Math.random())
-        return range[randomIndex]
-    }
-
-    randomColor() {
-        const range = ['8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
-        return '#' + this.randomArray(range) + this.randomArray(range) + this.randomArray(range) + this.randomArray(
-            range) + this.randomArray(range) + this.randomArray(range)
-    }
-
-    randomRange(start, end) {
-        return (end - start) * Math.random() + start
-    }
-
-    init() {
-        for (let i = 0; i < this.circleCount; i++) {
-            const circle = new Circle({
-                context: this.context,
-                origin: this.origin,
-                color: this.randomColor(),
-                angle: this.randomRange(Math.PI - 1, Math.PI + 1),
-                speed: this.randomRange(1, 6)
-            })
-            this.circles.push(circle)
+        draw() {
+            ctx.globalAlpha = this.alpha;
+            ctx.fillStyle = this.color;
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.globalAlpha = 1;
         }
     }
 
-    move() {
-        this.circles.forEach((circle, index) => {
-            if (circle.position.x > this.area.width || circle.position.y > this.area.height) {
-                return this.circles.splice(index, 1)
+    function createParticles(x, y) {
+        for (let i = 0; i < 10; i++) {
+            particlesArray.push(new Particle(x, y));
+        }
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particlesArray.forEach((particle, index) => {
+            particle.update();
+            particle.draw();
+            if (particle.alpha <= 0) {
+                particlesArray.splice(index, 1);
             }
-            circle.move()
-        })
-        if (this.circles.length == 0) {
-            this.stop = true
-        }
+        });
+        requestAnimationFrame(animate);
     }
 
-    draw() {
-        this.circles.forEach(circle => circle.draw())
-    }
-}
+    // 监听鼠标点击事件，生成粒子
+    document.addEventListener('click', function(event) {
+        createParticles(event.clientX, event.clientY);
+    });
 
-class CursorSpecialEffects {
-    constructor() {
-        this.computerCanvas = document.createElement('canvas')
-        this.renderCanvas = document.createElement('canvas')
-
-        this.computerContext = this.computerCanvas.getContext('2d')
-        this.renderContext = this.renderCanvas.getContext('2d')
-
-        this.globalWidth = window.innerWidth
-        this.globalHeight = window.innerHeight
-
-        this.booms = []
-        this.running = false
-    }
-
-    handleMouseDown(e) {
-        const boom = new Boom({
-            origin: {
-                x: e.clientX,
-                y: e.clientY
-            },
-            context: this.computerContext,
-            area: {
-                width: this.globalWidth,
-                height: this.globalHeight
-            }
-        })
-        boom.init()
-        this.booms.push(boom)
-        this.running || this.run()
-    }
-
-    handlePageHide() {
-        this.booms = []
-        this.running = false
-    }
-
-    init() {
-        const style = this.renderCanvas.style
-        style.position = 'fixed'
-        style.top = style.left = 0
-        style.zIndex = '999999999999999999999999999999999999999999'
-        style.pointerEvents = 'none'
-
-        style.width = this.renderCanvas.width = this.computerCanvas.width = this.globalWidth
-        style.height = this.renderCanvas.height = this.computerCanvas.height = this.globalHeight
-
-        document.body.append(this.renderCanvas)
-
-        window.addEventListener('mousedown', this.handleMouseDown.bind(this))
-        window.addEventListener('pagehide', this.handlePageHide.bind(this))
-    }
-
-    run() {
-        this.running = true
-        if (this.booms.length == 0) {
-            return this.running = false
-        }
-
-        requestAnimationFrame(this.run.bind(this))
-
-        this.computerContext.clearRect(0, 0, this.globalWidth, this.globalHeight)
-        this.renderContext.clearRect(0, 0, this.globalWidth, this.globalHeight)
-
-        this.booms.forEach((boom, index) => {
-            if (boom.stop) {
-                return this.booms.splice(index, 1)
-            }
-            boom.move()
-            boom.draw()
-        })
-        this.renderContext.drawImage(this.computerCanvas, 0, 0, this.globalWidth, this.globalHeight)
-    }
-}
-
-const cursorSpecialEffects = new CursorSpecialEffects()
-cursorSpecialEffects.init()
+    // 开始动画
+    animate();
+})();

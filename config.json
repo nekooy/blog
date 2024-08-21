@@ -4,6 +4,8 @@
   "avatarUrl": "https://avatars.githubusercontent.com/u/149825804?v=4",
   "startSite": "08/17/2024",
   "urlMode": "pinyin",
+  "bottomText":"转载请注明出处",
+  "script":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>",
   "allHead": "<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script><script src='https://nekooy.github.io/blog/firework.js'></script>",
   "GMEEK_VERSION": "main"
 }

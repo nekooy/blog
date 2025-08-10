@@ -1,121 +1,122 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Nekooy's Blog</title><link>https://blog.nekooy.com</link><description>快看看我写了什么 &gt;ᴗoಣ</description><copyright>Nekooy's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_o0Eg7PAPIvjID3mCjQaiiiop25BZzvAkAAyA8~c5_300x300.jpeg?from=2956013662</url><title>avatar</title><link>https://blog.nekooy.com</link></image><lastBuildDate>Thu, 07 Aug 2025 17:11:46 +0000</lastBuildDate><managingEditor>Nekooy's Blog</managingEditor><ttl>60</ttl><webMaster>Nekooy's Blog</webMaster><item><title>关于主页</title><link>https://blog.nekooy.com/post/guan-yu-zhu-ye.html</link><description>还没想好写什么，主页纠结了很久。</description><guid isPermaLink="true">https://blog.nekooy.com/post/guan-yu-zhu-ye.html</guid><pubDate>Thu, 07 Aug 2025 16:49:17 +0000</pubDate></item><item><title>创建博客</title><link>https://blog.nekooy.com/post/chuang-jian-bo-ke.html</link><description>终于弄好了，哈哈。</description><guid isPermaLink="true">https://blog.nekooy.com/post/chuang-jian-bo-ke.html</guid><pubDate>Thu, 07 Aug 2025 04:10:03 +0000</pubDate></item><item><title>关于我</title><link>https://blog.nekooy.com/about.html</link><description>终于找到你啦，我是谁呢，就不告诉你~。</description><guid isPermaLink="true">https://blog.nekooy.com/about.html</guid><pubDate>Thu, 07 Aug 2025 06:38:21 +0000</pubDate></item><item><title>友情链接</title><link>https://blog.nekooy.com/link.html</link><description>SOME导航网站链接整理
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Nekooy's Blog</title><link>https://blog.nekooy.com</link><description>快看看我写了什么 &gt;ᴗoಣ</description><copyright>Nekooy's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-i-0813_o0Eg7PAPIvjID3mCjQaiiiop25BZzvAkAAyA8~c5_300x300.jpeg?from=2956013662</url><title>avatar</title><link>https://blog.nekooy.com</link></image><lastBuildDate>Sun, 10 Aug 2025 16:24:13 +0000</lastBuildDate><managingEditor>Nekooy's Blog</managingEditor><ttl>60</ttl><webMaster>Nekooy's Blog</webMaster><item><title>关于主页</title><link>https://blog.nekooy.com/post/guan-yu-zhu-ye.html</link><description>还没想好写什么，主页纠结了很久。</description><guid isPermaLink="true">https://blog.nekooy.com/post/guan-yu-zhu-ye.html</guid><pubDate>Thu, 07 Aug 2025 16:49:17 +0000</pubDate></item><item><title>创建博客</title><link>https://blog.nekooy.com/post/chuang-jian-bo-ke.html</link><description>终于弄好了，哈哈。</description><guid isPermaLink="true">https://blog.nekooy.com/post/chuang-jian-bo-ke.html</guid><pubDate>Thu, 07 Aug 2025 04:10:03 +0000</pubDate></item><item><title>关于我</title><link>https://blog.nekooy.com/about.html</link><description>终于找到你啦，我是谁呢，就不告诉你~。</description><guid isPermaLink="true">https://blog.nekooy.com/about.html</guid><pubDate>Thu, 07 Aug 2025 06:38:21 +0000</pubDate></item><item><title>友情链接</title><link>https://blog.nekooy.com/link.html</link><description># 🌐 SOME导航网站整理
 
-一、侧边栏链接
-- Nekooy个人主页: https://nekooy.com
-- Nekooy's 博客: https://blog.nekooy.com
+## 📌 个人主页
+- [Nekooy个人主页](https://nekooy.com)
+- [Nekooy's 博客](https://blog.nekooy.com)
 
-二、搜索引擎
-- 必应: https://www.bing.com/search?q=
-- 谷歌: https://www.google.com/search?q=
-- 百度: https://www.baidu.com/s?word=
-- 番组计划: https://bgm.tv/subject_search/
-- 微信: https://weixin.sogou.com/weixinwap?ie=utf8&amp;type=2&amp;pg=webSearchList&amp;_sug_=y&amp;_sug_type_=&amp;query=
-- 知乎: https://www.zhihu.com/search?q=
-- bgm搜: https://search.ecnu.cf/search?q=site:bgm.tv 
+## 🔍 搜索引擎
+### 综合搜索
+- [必应](https://www.bing.com/search?q=)
+- [谷歌](https://www.google.com/search?q=)
+- [百度](https://www.baidu.com/s?word=)
 
-三、元站
-- B站-bilibili: https://bilibili.com
-- 班固米: https://bgm.tv
-- 豆瓣: https://www.douban.com
-- 萌娘百科: https://zh.moegirl.org.cn
-- 今热榜: https://rebang.today/home?tab=zhihu
+### 垂直搜索
+- [番组计划](https://bgm.tv/subject_search/)
+- [微信搜狗](https://weixin.sogou.com/weixinwap?ie=utf8&amp;type=2&amp;pg=webSearchList&amp;_sug_=y&amp;_sug_type_=&amp;query=)
+- [知乎](https://www.zhihu.com/search?q=)
+- [BGM搜](https://search.ecnu.cf/search?q=site:bgm.tv)
 
-四、工具类
-1. 开发工具
-- GitHub: https://github.com/
-- 脚本: https://greasyfork.org/zh-CN
-- JSBIN: https://jsbin.com/?html
+## 🌟 元站导航
+- [B站-bilibili](https://bilibili.com)
+- [班固米](https://bgm.tv)
+- [豆瓣](https://www.douban.com)
+- [萌娘百科](https://zh.moegirl.org.cn)
+- [今热榜](https://rebang.today/home?tab=zhihu)
 
-2. 搜索引擎
-- 必应Bing: https://bing.com
-- 维基百科: https://www.wikipedia.ecnu.cf/
+## 🛠️ 工具集合
+### 开发工具
+- [GitHub](https://github.com/)
+- [GreasyFork脚本](https://greasyfork.org/zh-CN)
+- [JSBIN在线编辑器](https://jsbin.com/?html)
 
-3. AI工具
-- ChatGPT: https://chatgpt.com/
-- 豆包: https://www.doubao.com/chat/
+### 知识检索
+- [必应Bing](https://bing.com)
+- [维基百科镜像](https://www.wikipedia.ecnu.cf/)
 
-4. 实用工具
-- keepass: https://app.keeweb.info/
-- AutoBangumi: https://github.com/EstrellaXD/Auto_Bangumi
-- BGM相关的坑: https://github.com/bangumi-users/awesome-bangumi
-- PT: https://wiki.ukenn.top/
+### AI工具
+- [ChatGPT](https://chatgpt.com/)
+- [豆包AI](https://www.doubao.com/chat/)
 
-5. 网络工具
-- Cloudflare DNS: https://1.1.1.1/
+### 实用工具
+- [KeePass密码管理](https://app.keeweb.info/)
+- [AutoBangumi](https://github.com/EstrellaXD/Auto_Bangumi)
+- [BGM资源合集](https://github.com/bangumi-users/awesome-bangumi)
+- [PT指南](https://wiki.ukenn.top/)
 
-6. 设计工具
-- Canva: https://www.canva.com/
-- Figma: https://www.figma.com/
+### 网络工具
+- [Cloudflare DNS](https://1.1.1.1/)
 
-五、社交类
-1. 社交媒体
-- 微博: https://weibo.com/
-- 知乎: https://www.zhihu.com/
-- B站动态: https://t.bilibili.com/
+### 设计工具
+- [Canva设计](https://www.canva.com/)
+- [Figma协作设计](https://www.figma.com/)
 
-2. 邮箱和账号服务
-- 微软帐号: https://account.microsoft.com
-- QQ邮箱: https://mail.qq.com
-- Outlook: https://outlook.live.com/
+## 💬 社交平台
+### 社交媒体
+- [微博](https://weibo.com/)
+- [知乎](https://www.zhihu.com/)
+- [B站动态](https://t.bilibili.com/)
 
-六、观看下载类
-1. 动漫观看平台
-- 桜漫: https://skr.cc
-- 稀饭: https://dick.xfani.com/
-- Libvio: https://libvio.app/
+### 邮箱服务
+- [微软帐号](https://account.microsoft.com)
+- [QQ邮箱](https://mail.qq.com)
+- [Outlook](https://outlook.live.com/)
 
-2. 动漫下载资源
-- 蜜柑计划: https://mikanime.tv/
-- 动漫花园镜像: https://www.dongmanhuayuan.com/
-- 同步: https://dongmanhuayuan.myheartsite.com
-- Waaa镜像: https://portal.waaa.moe/?page_id=160
+## 🎬 影音资源
+### 在线观看
+- [桜漫](https://skr.cc)
+- [稀饭动漫](https://dick.xfani.com/)
+- [Libvio影视](https://libvio.app/)
 
-3. 影视资源
-- 影猫の仓库: https://ymck.me/
+### 下载资源
+- [蜜柑计划](https://mikanime.tv/)
+- [动漫花园镜像](https://www.dongmanhuayuan.com/)
+- [同步镜像](https://dongmanhuayuan.myheartsite.com)
+- [Waaa镜像](https://portal.waaa.moe/?page_id=160)
 
-4. 综合资源
-- 文库吧: https://www.wenku8.net/modules/article/search.php?searchtype=articlename&amp;searchkey=
-- 弹弹play: https://www.dandanplay.com/
-- Ani: https://myani.org/
+### 综合资源
+- [影猫の仓库](https://ymck.me/)
+- [文库吧](https://www.wenku8.net/modules/article/search.php?searchtype=articlename&amp;searchkey=)
+- [弹弹play](https://www.dandanplay.com/)
+- [Ani资源站](https://myani.org/)
 
-七、云游戏类
-- 4399云游戏: https://y.4399.com/
-- 咪咕快游: https://www.migufun.com
-- 网易云游戏: https://cg.163.com
+## 🎮 云游戏
+- [4399云游戏](https://y.4399.com/)
+- [咪咕快游](https://www.migufun.com)
+- [网易云游戏](https://cg.163.com)
 
-八、资源整合类
-- 木晞i: https://yftdtddh.github.io/muxizyhz/
-- 资源贴集合: http://chii.in/blog/319400
-- 好物汇blog: http://chii.in/blog/321493
-- 桜岛: https://all.cc
+## 📦 资源整合
+- [木晞i导航](https://yftdtddh.github.io/muxizyhz/)
+- [资源贴集合](http://chii.in/blog/319400)
+- [好物汇blog](http://chii.in/blog/321493)
+- [桜岛导航](https://all.cc)
 
-九、资讯类
-1. 技术资讯
-- 掘金: https://juejin.cn/
-- CSDN: https://www.csdn.net/
-- InfoQ: https://www.infoq.cn/
+## 📰 资讯阅读
+### 技术资讯
+- [掘金](https://juejin.cn/)
+- [CSDN](https://www.csdn.net/)
+- [InfoQ](https://www.infoq.cn/)
 
-2. 资讯平台
-- 虎嗅: https://m.huxiu.com
+### 综合资讯
+- [虎嗅](https://m.huxiu.com)
 
-十、教育学习类
-1. 在线学习
-- Udemy: https://www.udemy.com/
-- Coursera: https://www.coursera.org/
-- 网易云课堂: https://study.163.com/
+## 🎓 学习平台
+### 在线课程
+- [Udemy](https://www.udemy.com/)
+- [Coursera](https://www.coursera.org/)
+- [网易云课堂](https://study.163.com/)
 
-2. 文档工具
-- Google文档: https://docs.google.com/
-- Notion: https://www.notion.so/
-- 石墨文档: https://shimo.im/
+### 文档协作
+- [Google文档](https://docs.google.com/)
+- [Notion](https://www.notion.so/)
+- [石墨文档](https://shimo.im/)
 
-十一、趣站类
-- type: https://www.typingclub.com/
-- banπ: https://sspai.com/post/70438
-- 多标签搜动漫: https://windrises.net/bgmtools/multitag
-- 新多标签搜动漫1: https://chii.ai/search
-- 新多标签搜动漫2: https://cityhunter.me/
-- 阿飞老师: https://m.bilibili.com/video/BV1Bp4y1D747?p=2
-- bgm-webapp: https://bangumi-app.5t5.top/iframe.html?viewMode=story&amp;id=screens-discovery--discovery
-- Clover: http://www.clover.ly/#projects。</description><guid isPermaLink="true">https://blog.nekooy.com/link.html</guid><pubDate>Thu, 07 Aug 2025 16:58:14 +0000</pubDate></item></channel></rss>
+## 🎪 趣味网站
+- [打字练习](https://www.typingclub.com/)
+- [banπ](https://sspai.com/post/70438)
+- [多标签搜动漫](https://windrises.net/bgmtools/multitag)
+- [新多标签搜动漫1](https://chii.ai/search)
+- [新多标签搜动漫2](https://cityhunter.me/)
+- [阿飞老师](https://m.bilibili.com/video/BV1Bp4y1D747?p=2)
+- [bgm-webapp](https://bangumi-app.5t5.top/iframe.html?viewMode=story&amp;id=screens-discovery--discovery)
+- [Clover导航](http://www.clover.ly/#projects)。</description><guid isPermaLink="true">https://blog.nekooy.com/link.html</guid><pubDate>Thu, 07 Aug 2025 16:58:14 +0000</pubDate></item></channel></rss>

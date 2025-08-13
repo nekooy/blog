@@ -68,7 +68,15 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
             <path id="music" fill-rule="evenodd"></path>
         </svg>
     </a>
-    
+    <a href="https://blog.nekooy.com/link.html" class="btn btn-invisible circle" title="友情链接">
+        <svg class="octicon" width="16" height="16" >
+            <path id="友情链接" fill-rule="evenodd"></path>
+        </svg>
+    </a><a href="https://blog.nekooy.com/about.html" class="btn btn-invisible circle" title="关于我">
+        <svg class="octicon" width="16" height="16" >
+            <path id="关于我" fill-rule="evenodd"></path>
+        </svg>
+    </a>
     <a href="https://blog.nekooy.com/rss.xml" target="_blank" id="buttonRSS" class="btn btn-invisible circle" title="RSS">
         <svg class="octicon" width="16" height="16" >
             <path id="pathRSS" fill-rule="evenodd"></path>
@@ -84,7 +92,29 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div style="margin-bottom: 16px;">快看看我写了什么 >ᴗoಣ</div>
 <nav class="SideNav border">
-
+<a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/guan-yu-zhu-ye.html">
+    <div class="d-flex flex-items-center">
+        <svg class="SideNav-icon octicon" style="witdh:16px;height:16px"><path class="svgTop0" d=""></path>
+        </svg>
+        <span class="listTitle">关于主页</span>
+    </div>
+    <div class="listLabels">
+        
+        <span class="Label LabelName" style="background-color:#bf8176"><object><a style="color:#fff" href="tag.html#介绍">介绍</a></object></span>
+        <span class="Label LabelTime" style="background-color:#0969da">2025-08-08</span>
+    </div>
+</a><a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/chuang-jian-bo-ke.html">
+    <div class="d-flex flex-items-center">
+        <svg class="SideNav-icon octicon" style="witdh:16px;height:16px"><path class="svgTop0" d=""></path>
+        </svg>
+        <span class="listTitle">创建博客</span>
+    </div>
+    <div class="listLabels">
+        
+        <span class="Label LabelName" style="background-color:#2ae6fc"><object><a style="color:#fff" href="tag.html#水文章">水文章</a></object></span>
+        <span class="Label LabelTime" style="background-color:#0969da">2025-08-07</span>
+    </div>
+</a>
 </nav>
 </div>
     <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://blog.nekooy.com">Nekooy's Blog</a></div>
@@ -152,7 +182,7 @@ for(var i=0;i<iconPost.length;i++){
 
 document.getElementById("music").setAttribute("d",value=IconList["music"]);
 
-
+document.getElementById("友情链接").setAttribute("d",value=IconList["link"]);document.getElementById("关于我").setAttribute("d",value=IconList["about"]);
 </script>
 
 

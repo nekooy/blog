@@ -84,29 +84,29 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
     <div id="content">
 <div class="markdown-body" id="postBody"><p>它以极简的语法规则，赋予普通文本灵动的结构与优雅的格式。</p>
-<h2>一、基础文本格式化：为文字注入灵魂</h2>
+<h2>一、基础文本格式化</h2>
 <p>基础文本格式化是Markdown的基石，它让文字摆脱平淡，拥有强调、区分和情感表达的能力。掌握这些简单的语法，便能轻松提升文本的可读性与表现力。</p>
-<h3>1.1 标题：文档的骨架与路标</h3>
+<h3>1.1 标题</h3>
 <p>标题是文档结构的核心，Markdown提供了六级标题语法，通过在文字前添加“#”符号来表示，“#”的数量越多，标题级别越低，字体越小。</p>
 <ul>
 <li>
-<p><code class="notranslate"># 一级标题</code>：对应HTML中的</p><h1>标签，是文档中最高级别的标题，通常用于文章大标题，字体最大、最醒目。<p></p>
-</h1></li>
+<p><code class="notranslate"># 一级标题：对应HTML中的&lt;h1&gt;标签，是文档中最高级别的标题，通常用于文章大标题，字体最大、最醒目。</code></p>
+</li>
 <li>
-<p><code class="notranslate">## 二级标题</code>：对应</p><h2>标签，常用于章节标题，字体大小仅次于一级标题。<p></p>
-</h2></li>
+<p><code class="notranslate">## 二级标题：对应&lt;h2&gt;标签，常用于章节标题，字体大小仅次于一级标题。</code></p>
+</li>
 <li>
-<p><code class="notranslate">### 三级标题</code>：对应</p><h3>标签，适用于小节标题，层次更细致。<p></p>
-</h3></li>
+<p><code class="notranslate">### 三级标题：对应&lt;h3&gt;标签，适用于小节标题，层次更细致。</code></p>
+</li>
 <li>
-<p><code class="notranslate">#### 四级标题</code>：对应</p><h4>标签，用于更细分的内容板块。<p></p>
-</h4></li>
+<p><code class="notranslate">#### 四级标题：对应&lt;h4&gt;标签，用于更细分的内容板块。</code></p>
+</li>
 <li>
-<p><code class="notranslate">##### 五级标题</code>：对应</p><h5>标签，字体较小，可用于次要的子标题。<p></p>
-</h5></li>
+<p><code class="notranslate">##### 五级标题：对应&lt;h5&gt;标签，字体较小，可用于次要的子标题。</code></p>
+</li>
 <li>
-<p><code class="notranslate">###### 六级标题</code>：对应</p><h6>标签，是最低级别的标题，字体最小，适用于细节说明性标题。<p></p>
-</h6></li>
+<p><code class="notranslate">###### 六级标题：对应&lt;h6&gt;标签，是最低级别的标题，字体最小，适用于细节说明性标题。</code></p>
+</li>
 </ul>
 <p>需要注意的是，“#”与标题文字之间必须保留一个空格，否则将被视为普通文本。此外，一级标题和二级标题还可以在文字下方添加“=”和“-”来表示，例如：</p>
 <pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
@@ -115,7 +115,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 二级标题示例
 -
 </code></pre>
-<h3>1.2 段落与换行：呼吸感的营造</h3>
+<h3>1.2 段落与换行</h3>
 <p>在Markdown中，段落的划分非常简单，只需在两段文字之间保留一个或多个空行即可。如果希望在同一段落内实现换行（软换行），则需要在换行处添加两个或多个空格，然后按下回车键。例如：</p>
 <pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
 这是第一段文字，通过空行与第二段分隔。
@@ -123,7 +123,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 这是第二段文字，这里需要换行  
 这是换行后的内容（注意换行处有两个空格）
 </code></pre>
-<h3>1.3 强调：让重点脱颖而出</h3>
+<h3>1.3 强调</h3>
 <p>为了突出文本中的重点内容，Markdown提供了斜体、粗体和粗斜体三种强调方式，分别通过不同数量的“*”或“_”符号包裹文字实现。</p>
 <ul>
 <li>
@@ -137,7 +137,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </li>
 </ul>
 <p>需要注意的是，“*”和“_”必须成对使用，且与文字之间不能有空格，否则强调效果不生效。</p>
-<h3>1.4 引用：对话与观点的回响</h3>
+<h3>1.4 引用</h3>
 <p>当需要引用他人的话语、文献内容或突出某段重要观点时，可以使用引用语法。在引用文本前添加“&gt;”符号，并在符号后保留一个空格即可。引用还支持嵌套，只需在嵌套的引用文本前添加多个“&gt;”符号。</p>
 <pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
 &gt; 这是一级引用，用于直接引用一段文字。
@@ -152,9 +152,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>这是嵌套的二级引用，可以用于引用中的引用，层次分明。</p>
 </blockquote>
 <p>引用结束后，只需空一行即可回到普通文本格式。</p>
-<h2>二、列表：有序与无序的秩序之美</h2>
+<h2>二、列表</h2>
 <p>列表是组织内容的重要工具，Markdown支持有序列表和无序列表，以及列表的嵌套，能够清晰地呈现步骤、要点等结构化信息。</p>
-<h3>2.1 无序列表：自由散落的要点</h3>
+<h3>2.1 无序列表</h3>
 <p>无序列表用于呈现没有先后顺序的要点，可使用“*”“+”或“-”作为列表项的标记，标记后需保留一个空格再填写列表内容。三种标记的效果相同，可根据个人习惯选择。</p>
 <pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
 * 无序列表项1（使用*标记）
@@ -173,7 +173,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>无序列表项3（使用-标记）</p>
 </li>
 </ul>
-<h3>2.2 有序列表：循序渐进的步骤</h3>
+<h3>2.2 有序列表</h3>
 <p>有序列表用于呈现具有先后顺序的内容，如步骤、流程等。在列表项前添加数字和英文句点“.”，句点后保留一个空格再填写内容。需要注意的是，数字的实际值并不影响列表的顺序，渲染时会自动按照连续的数字排列。</p>
 <pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
 1. 有序列表第一步
@@ -192,7 +192,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>有序列表第三步</p>
 </li>
 </ol>
-<h3>2.3 列表嵌套：层次分明的结构</h3>
+<h3>2.3 列表嵌套</h3>
 <p>当列表项需要进一步细分时，可以使用列表嵌套。在嵌套的列表项前添加四个空格或一个制表符（Tab），即可实现嵌套效果，支持有序列表与无序列表之间的交叉嵌套。</p>
 <pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
 1. 主列表项1
@@ -238,12 +238,12 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> 实践撰写一篇Markdown文档</p>
 </li>
 </ul>
-<h2>三、代码块：程序员的专属舞台</h2>
+<h2>三、代码块</h2>
 <p>对于程序员和技术文档撰写者而言，代码块是不可或缺的功能。Markdown提供了行内代码和块级代码两种展示方式，支持语法高亮，让代码呈现更加清晰易读。</p>
 <h3>3.1 行内代码：嵌入文本的代码片段</h3>
 <p>行内代码用于在普通文本中嵌入简短的代码片段，只需用反引号“`”将代码包裹起来即可。如果代码片段中本身包含反引号，可以使用两个反引号“``”包裹。</p>
 <p>示例：<code class="notranslate">在Python中，使用</code>print("Hello, Markdown!")<code class="notranslate">可以输出问候语。</code>，渲染效果为：在Python中，使用<code class="notranslate">print("Hello, Markdown!")</code>可以输出问候语。</p>
-<h3>3.2 块级代码：独立完整的代码块</h3>
+<h3>3.2 块级代码</h3>
 <p>块级代码用于展示完整的代码片段，有两种表示方式：</p>
 <ul>
 <li>
@@ -279,9 +279,9 @@ function add(a, b) {
 console.log(add(2, 3)); // 输出5
 }
 </code></pre>
-<h2>四、链接与图片：连接世界与视觉点缀</h2>
+<h2>四、链接与图片</h2>
 <p>链接让文档与外部世界相连，图片则为文档增添视觉色彩。Markdown提供了简洁的语法来插入链接和图片，让文档更加丰富多元。</p>
-<h3>4.1 链接：跳转的桥梁</h3>
+<h3>4.1 链接</h3>
 <p>Markdown的链接语法分为内联链接、参考链接和锚点链接三种类型。</p>
 <h4>4.1.1 内联链接</h4>
 <p>内联链接是最常用的链接形式，语法格式为<code class="notranslate">[链接文本](链接地址 "可选的标题")</code>。其中，“链接文本”是显示在文档中的可点击文字，“链接地址”是跳转的目标URL，“可选的标题”在鼠标悬停链接时显示，用双引号或单引号包裹。</p>
@@ -306,7 +306,7 @@ console.log(add(2, 3)); // 输出5
 <h4>4.1.3 锚点链接</h4>
 <p>锚点链接用于在同一文档内跳转到指定的锚点位置，实现文档内部的快速导航。语法格式为<code class="notranslate">[链接文本](#锚点名称)</code>，其中“锚点名称”通常是文档中标题的小写形式，单词之间用连字符“-”连接（不同解析器对锚点的处理可能略有差异，需根据实际情况调整）。</p>
 <p>示例：<code class="notranslate">[跳转到“基础文本格式化”部分](#一基础文本格式化：为文字注入灵魂)</code>，点击后将跳转到本文中“一、基础文本格式化：为文字注入灵魂”的标题位置。</p>
-<h3>4.2 图片：视觉的点缀</h3>
+<h3>4.2 图片</h3>
 <p>图片的语法与链接类似，只是在链接语法前多了一个感叹号“!”。语法格式为<code class="notranslate">![图片 alt 文本](图片地址 "可选的图片标题")</code>。</p>
 <ul>
 <li>
@@ -321,7 +321,7 @@ console.log(add(2, 3)); // 输出5
 </ul>
 <p>示例：<code class="notranslate">![Markdown Logo](https://markdown-here.com/img/icon256.png "Markdown Logo")</code>，渲染效果为：</p>
 <p>与链接类似，图片也支持参考式语法，格式为<code class="notranslate">![图片 alt 文本][图片标签]</code>，然后在文档其他位置定义<code class="notranslate">[图片标签]: 图片地址 "可选的图片标题"</code>。</p>
-<h2>五、表格：数据的规整之美</h2>
+<h2>五、表格</h2>
 <p>表格是呈现结构化数据的理想方式，Markdown通过简单的符号组合，便能创建清晰美观的表格。表格由表头、分隔线和表体三部分组成。</p>
 <h3>5.1 基本表格语法</h3>
 <pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
@@ -396,7 +396,7 @@ console.log(add(2, 3)); // 输出5
 </table></markdown-accessiblity-table>
 <h2>六、扩展语法：解锁更多高级功能</h2>
 <p>除了上述基础语法外，不同的Markdown解析器还支持一些扩展语法（如GitHub Flavored Markdown，简称GFM），这些语法为Markdown增添了更多实用功能，如脚注、定义列表、删除线等。</p>
-<h3>6.1 脚注：补充说明的利器</h3>
+<h3>6.1 脚注</h3>
 <p>脚注用于为文档中的内容添加补充说明，不影响正文的阅读流畅性。语法格式为：在需要添加脚注的位置使用<code class="notranslate">[^脚注标识]</code>，然后在文档末尾定义脚注内容<code class="notranslate">[^脚注标识]: 脚注具体内容</code>。脚注标识可以是字母、数字或符号，无需连续。</p>
 <pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
 Markdown是一种轻量级标记语言[^1]，由John Gruber和Aaron Swartz共同设计[^2]。
@@ -415,13 +415,17 @@ GFM
 : GitHub Flavored Markdown的缩写，是GitHub对标准Markdown的扩展。
 </code></pre>
 <p>渲染效果如下：</p>
-<h3>6.3 删除线：内容的修正与标记</h3>
+<p>Markdown<br>
+: 一种轻量级标记语言，用于格式化文本。</p>
+<p>GFM<br>
+: GitHub Flavored Markdown的缩写，是GitHub对标准Markdown的扩展。</p>
+<h3>6.3 删除线</h3>
 <p>删除线用于标记已过时、错误或需要删除的内容，语法格式为用两个波浪号“~~”包裹文本。</p>
 <p>示例：<code class="notranslate">~~这是需要删除的内容~~</code>，渲染效果为：<del>这是需要删除的内容</del>。</p>
-<h3>6.4 高亮：重点内容的醒目提示</h3>
+<h3>6.4 高亮</h3>
 <p>部分Markdown解析器（如GFM）支持高亮语法，用两个等号“==”包裹文本即可实现高亮效果。</p>
 <p>示例：<code class="notranslate">这是==需要高亮的重点内容==</code>，渲染效果为：这是==需要高亮的重点内容==（具体效果取决于解析器是否支持）。</p>
-<h3>6.5 数学公式：科技文档的必备工具</h3>
+<h3>6.5 数学公式</h3>
 <p>对于科技类文档，数学公式是重要的组成部分。Markdown通常通过LaTeX语法来支持数学公式，分为行内公式和块级公式。</p>
 <ul>
 <li>
@@ -437,9 +441,9 @@ $$
 $$
 </code></pre>
 <p>渲染效果为：$$\int_{a}^{b} f(x) , dx = F(b) - F(a)$$（需解析器支持LaTeX公式渲染）。</p>
-<h2>七、实用技巧与注意事项：让排版更完美</h2>
+<h2>七、实用技巧与注意事项</h2>
 <p>掌握了Markdown的语法规则后，了解一些实用技巧和注意事项，能让你的文档排版更加规范、美观。</p>
-<h3>7.1 水平线：内容分割的优雅方式</h3>
+<h3>7.1 水平线</h3>
 <p>在文档中添加水平线可以清晰地分割不同的内容板块，语法格式为在单独一行中输入三个或更多的“*”“-”或“_”，符号之间可以有空格。</p>
 <pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
 ***
@@ -448,10 +452,10 @@ ___
 </code></pre>
 <p>三种方式渲染效果相同，均为一条水平线：</p>
 <hr>
-<h3>7.2 转义字符：特殊符号的正确显示</h3>
+<h3>7.2 转义字符</h3>
 <p>当需要在文档中显示Markdown的特殊符号（如“#”“*”“[”“]”等）时，需要使用反斜杠“\”进行转义，让解析器将其识别为普通字符。</p>
 <p>示例：<code class="notranslate">\# 这不是标题</code>，渲染效果为：# 这不是标题；<code class="notranslate">\*这不是斜体\*</code>，渲染效果为：<em>这不是斜体</em>。</p>
-<h3>7.3 空格与空行：排版的细节把控</h3>
+<h3>7.3 空格与空行</h3>
 <p>Markdown对空格和空行较为敏感，合理使用能提升文档的排版效果：</p>
 <ul>
 <li>
@@ -467,9 +471,9 @@ ___
 <p>同一段落内换行需在换行处添加两个或多个空格。</p>
 </li>
 </ul>
-<h3>7.4 解析器差异：语法兼容性考量</h3>
+<h3>7.4 解析器差异</h3>
 <p>不同的Markdown解析器对语法的支持可能存在差异，尤其是扩展语法部分。例如，GFM支持删除线、表格等扩展语法，而一些古老的解析器可能仅支持基础语法。在撰写文档时，需根据目标平台（如GitHub、CSDN、简书等）的解析器特性，选择合适的语法，以确保文档的正确渲染。</p>
-<h2>八、总结：极简语法，极致表达</h2>
+<h2>八、总结</h2>
 <p>Markdown以其极简的语法规则，实现了“易写易读”的核心目标。它摒弃了复杂的排版操作，让使用者能够专注于内容创作本身，同时又能轻松生成结构清晰、格式优美的文档。从基础的文本格式化到进阶的多媒体嵌入，从简单的列表到复杂的表格和数学公式，Markdown用简洁的符号构建了一个强大的排版体系。</p>
 <p>掌握Markdown，就如同掌握了一门“指尖上的文字魔法”，它能让你的每一段文字都充满秩序与美感，让你的创作过程更加高效与愉悦。无论是技术文档、博客文章，还是日常笔记、会议纪要，Markdown都能成为你最得力的文字排版助手。现在，就让我们拿起键盘，用Markdown开启一场极简而优雅的文字创作之旅吧！</p>
 <blockquote>

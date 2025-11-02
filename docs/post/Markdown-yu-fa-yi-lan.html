@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    <script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>
+    <link rel="icon" href="https://nekooy.com/favicon.ico"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="它以极简的语法规则，赋予普通文本灵动的结构与优雅的格式。">
+<meta property="og:title" content="Markdown语法一览">
+<meta property="og:description" content="它以极简的语法规则，赋予普通文本灵动的结构与优雅的格式。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://blog.nekooy.com/post/Markdown-yu-fa-yi-lan.html">
+<meta property="og:image" content="https://nekooy.com/favicon.ico">
+<title>Markdown语法一览</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">Markdown语法一览</h1>
+<div class="title-right">
+    <a href="https://blog.nekooy.com" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/nekooy/blog/issues/5" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p>它以极简的语法规则，赋予普通文本灵动的结构与优雅的格式。</p>
+<h2>一、基础文本格式化：为文字注入灵魂</h2>
+<p>基础文本格式化是Markdown的基石，它让文字摆脱平淡，拥有强调、区分和情感表达的能力。掌握这些简单的语法，便能轻松提升文本的可读性与表现力。</p>
+<h3>1.1 标题：文档的骨架与路标</h3>
+<p>标题是文档结构的核心，Markdown提供了六级标题语法，通过在文字前添加“#”符号来表示，“#”的数量越多，标题级别越低，字体越小。</p>
+<ul>
+<li>
+<p><code class="notranslate"># 一级标题</code>：对应HTML中的</p><h1>标签，是文档中最高级别的标题，通常用于文章大标题，字体最大、最醒目。<p></p>
+</h1></li>
+<li>
+<p><code class="notranslate">## 二级标题</code>：对应</p><h2>标签，常用于章节标题，字体大小仅次于一级标题。<p></p>
+</h2></li>
+<li>
+<p><code class="notranslate">### 三级标题</code>：对应</p><h3>标签，适用于小节标题，层次更细致。<p></p>
+</h3></li>
+<li>
+<p><code class="notranslate">#### 四级标题</code>：对应</p><h4>标签，用于更细分的内容板块。<p></p>
+</h4></li>
+<li>
+<p><code class="notranslate">##### 五级标题</code>：对应</p><h5>标签，字体较小，可用于次要的子标题。<p></p>
+</h5></li>
+<li>
+<p><code class="notranslate">###### 六级标题</code>：对应</p><h6>标签，是最低级别的标题，字体最小，适用于细节说明性标题。<p></p>
+</h6></li>
+</ul>
+<p>需要注意的是，“#”与标题文字之间必须保留一个空格，否则将被视为普通文本。此外，一级标题和二级标题还可以在文字下方添加“=”和“-”来表示，例如：</p>
+<pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
+一级标题示例
+=
+二级标题示例
+-
+</code></pre>
+<h3>1.2 段落与换行：呼吸感的营造</h3>
+<p>在Markdown中，段落的划分非常简单，只需在两段文字之间保留一个或多个空行即可。如果希望在同一段落内实现换行（软换行），则需要在换行处添加两个或多个空格，然后按下回车键。例如：</p>
+<pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
+这是第一段文字，通过空行与第二段分隔。
+
+这是第二段文字，这里需要换行  
+这是换行后的内容（注意换行处有两个空格）
+</code></pre>
+<h3>1.3 强调：让重点脱颖而出</h3>
+<p>为了突出文本中的重点内容，Markdown提供了斜体、粗体和粗斜体三种强调方式，分别通过不同数量的“*”或“_”符号包裹文字实现。</p>
+<ul>
+<li>
+<p><strong>斜体</strong>：用一个“<em>”或“_”包裹文字，例如<code class="notranslate">*斜体文本*</code>或<code class="notranslate">_斜体文本_</code>，渲染后效果为</em>斜体文本*。</p>
+</li>
+<li>
+<p><strong>粗体</strong>：用两个“*”或“_”包裹文字，例如<code class="notranslate">**粗体文本**</code>或<code class="notranslate">__粗体文本__</code>，渲染后效果为<strong>粗体文本</strong>。</p>
+</li>
+<li>
+<p><strong>粗斜体</strong>：用三个“<em>”或“_”包裹文字，例如<code class="notranslate">***粗斜体文本***</code>或<code class="notranslate">___粗斜体文本___</code>，渲染后效果为</em><strong>粗斜体文本</strong>*。</p>
+</li>
+</ul>
+<p>需要注意的是，“*”和“_”必须成对使用，且与文字之间不能有空格，否则强调效果不生效。</p>
+<h3>1.4 引用：对话与观点的回响</h3>
+<p>当需要引用他人的话语、文献内容或突出某段重要观点时，可以使用引用语法。在引用文本前添加“&gt;”符号，并在符号后保留一个空格即可。引用还支持嵌套，只需在嵌套的引用文本前添加多个“&gt;”符号。</p>
+<pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
+&gt; 这是一级引用，用于直接引用一段文字。
+&gt; 
+&gt; &gt; 这是嵌套的二级引用，可以用于引用中的引用，层次分明。
+&gt; 
+&gt; 引用结束后，只需空一行即可回到普通文本格式。
+</code></pre>
+<p>渲染效果如下：</p>
+<blockquote>
+<p>这是一级引用，用于直接引用一段文字。</p>
+<p>这是嵌套的二级引用，可以用于引用中的引用，层次分明。</p>
+</blockquote>
+<p>引用结束后，只需空一行即可回到普通文本格式。</p>
+<h2>二、列表：有序与无序的秩序之美</h2>
+<p>列表是组织内容的重要工具，Markdown支持有序列表和无序列表，以及列表的嵌套，能够清晰地呈现步骤、要点等结构化信息。</p>
+<h3>2.1 无序列表：自由散落的要点</h3>
+<p>无序列表用于呈现没有先后顺序的要点，可使用“*”“+”或“-”作为列表项的标记，标记后需保留一个空格再填写列表内容。三种标记的效果相同，可根据个人习惯选择。</p>
+<pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
+* 无序列表项1（使用*标记）
++ 无序列表项2（使用+标记）
+- 无序列表项3（使用-标记）
+</code></pre>
+<p>渲染效果如下：</p>
+<ul>
+<li>
+<p>无序列表项1（使用*标记）</p>
+</li>
+<li>
+<p>无序列表项2（使用+标记）</p>
+</li>
+<li>
+<p>无序列表项3（使用-标记）</p>
+</li>
+</ul>
+<h3>2.2 有序列表：循序渐进的步骤</h3>
+<p>有序列表用于呈现具有先后顺序的内容，如步骤、流程等。在列表项前添加数字和英文句点“.”，句点后保留一个空格再填写内容。需要注意的是，数字的实际值并不影响列表的顺序，渲染时会自动按照连续的数字排列。</p>
+<pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
+1. 有序列表第一步
+2. 有序列表第二步
+3. 有序列表第三步
+</code></pre>
+<p>渲染效果如下：</p>
+<ol>
+<li>
+<p>有序列表第一步</p>
+</li>
+<li>
+<p>有序列表第二步</p>
+</li>
+<li>
+<p>有序列表第三步</p>
+</li>
+</ol>
+<h3>2.3 列表嵌套：层次分明的结构</h3>
+<p>当列表项需要进一步细分时，可以使用列表嵌套。在嵌套的列表项前添加四个空格或一个制表符（Tab），即可实现嵌套效果，支持有序列表与无序列表之间的交叉嵌套。</p>
+<pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
+1. 主列表项1
+   * 嵌套无序列表项1
+   * 嵌套无序列表项2
+2. 主列表项2
+   1. 嵌套有序列表项1
+   2. 嵌套有序列表项2
+</code></pre>
+<p>渲染效果如下：</p>
+<ol>
+<li>
+<p>主列表项1<br>
+嵌套无序列表项1</p>
+</li>
+<li>
+<p>嵌套无序列表项2</p>
+</li>
+<li>
+<p>主列表项2<br>
+嵌套有序列表项1</p>
+</li>
+<li>
+<p>嵌套有序列表项2</p>
+</li>
+</ol>
+<h3>2.4 任务列表：待办事项的清晰追踪</h3>
+<p>任务列表（待办列表）是一种特殊的列表形式，用于追踪待办事项的完成状态。在列表项前添加“- [ ]”表示未完成任务，添加“- [x]”（x不区分大小写）表示已完成任务，中括号内与括号之间需保留空格。</p>
+<pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
+- [x] 完成Markdown基础语法学习
+- [ ] 学习Markdown进阶语法
+- [ ] 实践撰写一篇Markdown文档
+</code></pre>
+<p>渲染效果如下：</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<p><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Completed task" checked=""> <del>完成Markdown基础语法学习</del></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> 学习Markdown进阶语法</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> 实践撰写一篇Markdown文档</p>
+</li>
+</ul>
+<h2>三、代码块：程序员的专属舞台</h2>
+<p>对于程序员和技术文档撰写者而言，代码块是不可或缺的功能。Markdown提供了行内代码和块级代码两种展示方式，支持语法高亮，让代码呈现更加清晰易读。</p>
+<h3>3.1 行内代码：嵌入文本的代码片段</h3>
+<p>行内代码用于在普通文本中嵌入简短的代码片段，只需用反引号“`”将代码包裹起来即可。如果代码片段中本身包含反引号，可以使用两个反引号“``”包裹。</p>
+<p>示例：<code class="notranslate">在Python中，使用</code>print("Hello, Markdown!")<code class="notranslate">可以输出问候语。</code>，渲染效果为：在Python中，使用<code class="notranslate">print("Hello, Markdown!")</code>可以输出问候语。</p>
+<h3>3.2 块级代码：独立完整的代码块</h3>
+<p>块级代码用于展示完整的代码片段，有两种表示方式：</p>
+<ul>
+<li>
+<p><strong>缩进式</strong>：在代码块的每一行前添加四个空格或一个制表符（Tab）。这种方式简单直接，但对于多行代码的缩进调整较为繁琐。</p>
+</li>
+<li>
+<p><strong>围栏式</strong>：使用三个或更多反引号“```”包裹代码块，在开头的反引号后可以指定编程语言，实现语法高亮。这种方式是目前最常用的代码块表示方法，支持多种编程语言的语法高亮。</p>
+</li>
+</ul>
+<pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
+// 缩进式代码块（每行前加四个空格）
+function add(a, b) {
+    return a + b;
+}
+</code></pre>
+<pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
+```javascript
+// 围栏式代码块（指定JavaScript语言，支持语法高亮）
+function add(a, b) {
+    return a + b;
+}
+console.log(add(2, 3)); // 输出5
+</code></pre>
+<pre class="notranslate"><code class="notranslate">
+围栏式代码块渲染效果如下（带有语法高亮）：
+
+```javascript
+
+// 围栏式代码块（指定JavaScript语言，支持语法高亮）
+function add(a, b) {
+    return a + b;
+}
+console.log(add(2, 3)); // 输出5
+}
+</code></pre>
+<h2>四、链接与图片：连接世界与视觉点缀</h2>
+<p>链接让文档与外部世界相连，图片则为文档增添视觉色彩。Markdown提供了简洁的语法来插入链接和图片，让文档更加丰富多元。</p>
+<h3>4.1 链接：跳转的桥梁</h3>
+<p>Markdown的链接语法分为内联链接、参考链接和锚点链接三种类型。</p>
+<h4>4.1.1 内联链接</h4>
+<p>内联链接是最常用的链接形式，语法格式为<code class="notranslate">[链接文本](链接地址 "可选的标题")</code>。其中，“链接文本”是显示在文档中的可点击文字，“链接地址”是跳转的目标URL，“可选的标题”在鼠标悬停链接时显示，用双引号或单引号包裹。</p>
+<p>示例：<code class="notranslate">[Markdown官方文档](https://www.markdownguide.org "Markdown Guide")</code>，渲染效果为：<a href="https://www.markdownguide.org" title="Markdown Guide" rel="nofollow">Markdown官方文档</a>。</p>
+<h4>4.1.2 参考链接</h4>
+<p>参考链接适用于同一链接在文档中多次使用的场景，通过定义链接标签来复用链接地址，使文档代码更加简洁。语法格式分为两部分：链接的引用部分和链接的定义部分。</p>
+<ul>
+<li>
+<p><strong>引用部分</strong>：<code class="notranslate">[链接文本][链接标签]</code>，“链接标签”可以是字母、数字、空格或标点符号（不区分大小写）。</p>
+</li>
+<li>
+<p><strong>定义部分</strong>：<code class="notranslate">[链接标签]: 链接地址 "可选的标题"</code>，定义部分可以放在文档的任何位置，通常放在文档末尾。</p>
+</li>
+</ul>
+<pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
+我推荐阅读[Markdown官方文档][md-guide]，也可以参考[GitHub Flavored Markdown][gfm]文档。
+
+[md-guide]: https://www.markdownguide.org "Markdown Guide"
+[gfm]: https://github.github.com/gfm/ "GitHub Flavored Markdown"
+</code></pre>
+<p>渲染效果与内联链接相同：我推荐阅读<a href="https://www.markdownguide.org" title="Markdown Guide" rel="nofollow">Markdown官方文档</a>，也可以参考<a href="https://github.github.com/gfm/" title="GitHub Flavored Markdown">GitHub Flavored Markdown</a>文档。</p>
+<h4>4.1.3 锚点链接</h4>
+<p>锚点链接用于在同一文档内跳转到指定的锚点位置，实现文档内部的快速导航。语法格式为<code class="notranslate">[链接文本](#锚点名称)</code>，其中“锚点名称”通常是文档中标题的小写形式，单词之间用连字符“-”连接（不同解析器对锚点的处理可能略有差异，需根据实际情况调整）。</p>
+<p>示例：<code class="notranslate">[跳转到“基础文本格式化”部分](#一基础文本格式化：为文字注入灵魂)</code>，点击后将跳转到本文中“一、基础文本格式化：为文字注入灵魂”的标题位置。</p>
+<h3>4.2 图片：视觉的点缀</h3>
+<p>图片的语法与链接类似，只是在链接语法前多了一个感叹号“!”。语法格式为<code class="notranslate">![图片 alt 文本](图片地址 "可选的图片标题")</code>。</p>
+<ul>
+<li>
+<p><strong>图片 alt 文本</strong>：当图片无法加载时显示的替代文本，对 accessibility（可访问性）非常重要。</p>
+</li>
+<li>
+<p><strong>图片地址</strong>：可以是本地图片的路径（相对路径或绝对路径），也可以是网络图片的URL。</p>
+</li>
+<li>
+<p><strong>可选的图片标题</strong>：与链接的标题类似，在鼠标悬停图片时显示。</p>
+</li>
+</ul>
+<p>示例：<code class="notranslate">![Markdown Logo](https://markdown-here.com/img/icon256.png "Markdown Logo")</code>，渲染效果为：</p>
+<p>与链接类似，图片也支持参考式语法，格式为<code class="notranslate">![图片 alt 文本][图片标签]</code>，然后在文档其他位置定义<code class="notranslate">[图片标签]: 图片地址 "可选的图片标题"</code>。</p>
+<h2>五、表格：数据的规整之美</h2>
+<p>表格是呈现结构化数据的理想方式，Markdown通过简单的符号组合，便能创建清晰美观的表格。表格由表头、分隔线和表体三部分组成。</p>
+<h3>5.1 基本表格语法</h3>
+<pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
+| 表头1 | 表头2 | 表头3 |
+| --- | --- | --- |
+| 单元格1 | 单元格2 | 单元格3 |
+| 单元格4 | 单元格5 | 单元格6 |
+</code></pre>
+<p>其中，“|”用于分隔列，“---”用于表示表头与表体之间的分隔线。分隔线的长度不影响表格的渲染效果，但为了美观，通常与列的宽度保持一致。</p>
+<p>渲染效果如下：</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>表头1</th>
+<th>表头2</th>
+<th>表头3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单元格1</td>
+<td>单元格2</td>
+<td>单元格3</td>
+</tr>
+<tr>
+<td>单元格4</td>
+<td>单元格5</td>
+<td>单元格6</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h3>5.2 表格对齐方式</h3>
+<p>Markdown支持表格列的对齐方式设置，通过在分隔线中添加冒号“:”来实现，冒号的位置决定了对齐方向：</p>
+<ul>
+<li>
+<p><code class="notranslate">:---</code>：左对齐（默认对齐方式）</p>
+</li>
+<li>
+<p><code class="notranslate">:---:</code>：居中对齐</p>
+</li>
+<li>
+<p><code class="notranslate">---:</code>：右对齐</p>
+</li>
+</ul>
+<pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
+| 左对齐 | 居中对齐 | 右对齐 |
+| :--- | :---: | ---: |
+| 内容1 | 内容2 | 内容3 |
+| 长文本内容示例 | 居中文本 | 数值100 |
+</code></pre>
+<p>渲染效果如下：</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>左对齐</th>
+<th>居中对齐</th>
+<th>右对齐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内容1</td>
+<td>内容2</td>
+<td>内容3</td>
+</tr>
+<tr>
+<td>长文本内容示例</td>
+<td>居中文本</td>
+<td>数值100</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h2>六、扩展语法：解锁更多高级功能</h2>
+<p>除了上述基础语法外，不同的Markdown解析器还支持一些扩展语法（如GitHub Flavored Markdown，简称GFM），这些语法为Markdown增添了更多实用功能，如脚注、定义列表、删除线等。</p>
+<h3>6.1 脚注：补充说明的利器</h3>
+<p>脚注用于为文档中的内容添加补充说明，不影响正文的阅读流畅性。语法格式为：在需要添加脚注的位置使用<code class="notranslate">[^脚注标识]</code>，然后在文档末尾定义脚注内容<code class="notranslate">[^脚注标识]: 脚注具体内容</code>。脚注标识可以是字母、数字或符号，无需连续。</p>
+<pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
+Markdown是一种轻量级标记语言[^1]，由John Gruber和Aaron Swartz共同设计[^2]。
+
+[^1]: 轻量级标记语言是一类用简单标记描述文档结构和格式的语言，相比HTML更加简洁易读。
+[^2]: John Gruber是一位技术作家和博主，Aaron Swartz是一位程序员和互联网活动家。
+</code></pre>
+<p>渲染效果中，脚注标识会显示为上标链接，点击可跳转到文档末尾的脚注内容处。</p>
+<h3>6.2 定义列表：术语与解释的配对</h3>
+<p>定义列表用于呈现术语及其解释，语法格式为：术语独占一行，解释部分在术语下方，以冒号“:”开头，并缩进四个空格或一个制表符。</p>
+<pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
+Markdown
+: 一种轻量级标记语言，用于格式化文本。
+
+GFM
+: GitHub Flavored Markdown的缩写，是GitHub对标准Markdown的扩展。
+</code></pre>
+<p>渲染效果如下：</p>
+<h3>6.3 删除线：内容的修正与标记</h3>
+<p>删除线用于标记已过时、错误或需要删除的内容，语法格式为用两个波浪号“~~”包裹文本。</p>
+<p>示例：<code class="notranslate">~~这是需要删除的内容~~</code>，渲染效果为：<del>这是需要删除的内容</del>。</p>
+<h3>6.4 高亮：重点内容的醒目提示</h3>
+<p>部分Markdown解析器（如GFM）支持高亮语法，用两个等号“==”包裹文本即可实现高亮效果。</p>
+<p>示例：<code class="notranslate">这是==需要高亮的重点内容==</code>，渲染效果为：这是==需要高亮的重点内容==（具体效果取决于解析器是否支持）。</p>
+<h3>6.5 数学公式：科技文档的必备工具</h3>
+<p>对于科技类文档，数学公式是重要的组成部分。Markdown通常通过LaTeX语法来支持数学公式，分为行内公式和块级公式。</p>
+<ul>
+<li>
+<p><strong>行内公式</strong>：用单个美元符号“$”包裹LaTeX公式，例如<code class="notranslate">$E=mc^2$</code>，渲染效果为：$E=mc^2$。</p>
+</li>
+<li>
+<p><strong>块级公式</strong>：用两个美元符号“$$”包裹LaTeX公式，公式将独占一行并居中显示，例如：</p>
+</li>
+</ul>
+<pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
+$$
+\int_{a}^{b} f(x) \, dx = F(b) - F(a)
+$$
+</code></pre>
+<p>渲染效果为：$$\int_{a}^{b} f(x) , dx = F(b) - F(a)$$（需解析器支持LaTeX公式渲染）。</p>
+<h2>七、实用技巧与注意事项：让排版更完美</h2>
+<p>掌握了Markdown的语法规则后，了解一些实用技巧和注意事项，能让你的文档排版更加规范、美观。</p>
+<h3>7.1 水平线：内容分割的优雅方式</h3>
+<p>在文档中添加水平线可以清晰地分割不同的内容板块，语法格式为在单独一行中输入三个或更多的“*”“-”或“_”，符号之间可以有空格。</p>
+<pre lang="Plain" data-meta="Text" class="notranslate"><code class="notranslate">
+***
+---
+___
+</code></pre>
+<p>三种方式渲染效果相同，均为一条水平线：</p>
+<hr>
+<h3>7.2 转义字符：特殊符号的正确显示</h3>
+<p>当需要在文档中显示Markdown的特殊符号（如“#”“*”“[”“]”等）时，需要使用反斜杠“\”进行转义，让解析器将其识别为普通字符。</p>
+<p>示例：<code class="notranslate">\# 这不是标题</code>，渲染效果为：# 这不是标题；<code class="notranslate">\*这不是斜体\*</code>，渲染效果为：<em>这不是斜体</em>。</p>
+<h3>7.3 空格与空行：排版的细节把控</h3>
+<p>Markdown对空格和空行较为敏感，合理使用能提升文档的排版效果：</p>
+<ul>
+<li>
+<p>标题语法中，“#”与标题文字之间必须保留一个空格。</p>
+</li>
+<li>
+<p>列表项标记、引用标记与内容之间必须保留一个空格。</p>
+</li>
+<li>
+<p>段落之间需保留一个或多个空行才能正确划分段落。</p>
+</li>
+<li>
+<p>同一段落内换行需在换行处添加两个或多个空格。</p>
+</li>
+</ul>
+<h3>7.4 解析器差异：语法兼容性考量</h3>
+<p>不同的Markdown解析器对语法的支持可能存在差异，尤其是扩展语法部分。例如，GFM支持删除线、表格等扩展语法，而一些古老的解析器可能仅支持基础语法。在撰写文档时，需根据目标平台（如GitHub、CSDN、简书等）的解析器特性，选择合适的语法，以确保文档的正确渲染。</p>
+<h2>八、总结：极简语法，极致表达</h2>
+<p>Markdown以其极简的语法规则，实现了“易写易读”的核心目标。它摒弃了复杂的排版操作，让使用者能够专注于内容创作本身，同时又能轻松生成结构清晰、格式优美的文档。从基础的文本格式化到进阶的多媒体嵌入，从简单的列表到复杂的表格和数学公式，Markdown用简洁的符号构建了一个强大的排版体系。</p>
+<p>掌握Markdown，就如同掌握了一门“指尖上的文字魔法”，它能让你的每一段文字都充满秩序与美感，让你的创作过程更加高效与愉悦。无论是技术文档、博客文章，还是日常笔记、会议纪要，Markdown都能成为你最得力的文字排版助手。现在，就让我们拿起键盘，用Markdown开启一场极简而优雅的文字创作之旅吧！</p>
+<blockquote>
+<p>（注：文档部分内容可能由 AI 生成）</p>
+</blockquote></div>
+<div style="font-size:small;margin-top:8px;float:right;">转载文章请注明出处，谢谢~</div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://blog.nekooy.com">Nekooy's Blog</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("08/07/2025"!=""){
+    var startSite=new Date("08/07/2025");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek main https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.disabled=true;
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","nekooy/blog");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+
+
+</html>

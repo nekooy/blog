@@ -152,7 +152,7 @@
 ```Plain Text
 
 - [x] 完成Markdown基础语法学习
-- [ ] 学习Markdown进阶语法
+- [x] 学习Markdown进阶语法
 - [ ] 实践撰写一篇Markdown文档
 ```
 

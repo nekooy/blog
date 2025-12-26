@@ -5,7 +5,7 @@ on:
   issues:
     types: [opened, edited]
   schedule:
-    - cron: "0 16 * * *"
+    - cron: "0 0 1 * *"  # 每月1日00:00 UTC触发
     
 jobs:
   build:
@@ -54,6 +54,7 @@ jobs:
           cp -a /opt/Gmeek/docs ${{ github.workspace }} 
           cp -a /opt/Gmeek/backup ${{ github.workspace }} 
           cp /opt/Gmeek/blogBase.json ${{ github.workspace }} 
+          curl -o ${{ github.workspace }}/docs/404.html https://raw.githubusercontent.com/nekooy/nekooy.github.io/main/404.html
           
       - name: update html
         run: |
